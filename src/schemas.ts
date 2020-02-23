@@ -74,7 +74,7 @@ export namespace txFields {
 
   // String 'WAVES' often used instead of null. That's why we should serialize it as null
   export const base58Option32 = (name: string): TObjectField => ([name, {
-    toBytes: (s: string) => s === 'WAVES' ? OPTION(BASE58_STRING)(null) : OPTION(BASE58_STRING)(s),
+    toBytes: (s: string) => s === 'TN' ? OPTION(BASE58_STRING)(null) : OPTION(BASE58_STRING)(s),
     fromBytes: P_OPTION(P_BASE58_FIXED(32)),
   }])
 
