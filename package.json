@@ -1,6 +1,8 @@
 {
   "version": "0.14.0",
   "name": "@turtlenetwork/marshall",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc && webpack --config webpack.config.js --env",
